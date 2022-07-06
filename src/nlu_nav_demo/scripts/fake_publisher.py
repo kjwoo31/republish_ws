@@ -53,13 +53,25 @@ class FakePublish:
         while not rospy.is_shutdown():
             try:
                 self.bbox_pub.publish(self.bbox)
+            except:
+                print("bbox not publishing yet")
+            try:
                 self.detectimg_pub.publish(self.detectimg)
+            except:
+                print("detectimg not publishing yet")
+            try:            
                 self.trackimg_pub.publish(self.trackimg)
+            except:
+                print("trackimg not publishing yet")
+            try:  
                 self.map_pub.publish(self.map_pub)
+            except:
+                print("map not publishing yet")                
+            try:  
                 self.text_pub.publish(self.text)
             except:
-                print("not publishing yet")
-                time.sleep(1)
+                print("text not publishing yet")                
+
 
 if __name__ == '__main__':
     rospy.init_node('fake_publisher')

@@ -1,1 +1,0 @@
-/home/rirolab-vr/Desktop/republish_ws/devel/.private/nlu_nav_demo/share/roseus/ros/nlu_nav_demo/manifest.l

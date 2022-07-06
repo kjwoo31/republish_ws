@@ -1,7 +1,0 @@
-Symlinking /home/rirolab-vr/Desktop/republish_ws/devel/lib/pkgconfig/nlu_nav_demo.pc
-Symlinking /home/rirolab-vr/Desktop/republish_ws/devel/lib/python2.7/dist-packages/nlu_nav_demo/__init__.py
-Symlinking /home/rirolab-vr/Desktop/republish_ws/devel/share/nlu_nav_demo/cmake/nlu_nav_demoConfig.cmake
-Symlinking /home/rirolab-vr/Desktop/republish_ws/devel/share/nlu_nav_demo/cmake/nlu_nav_demoConfig-version.cmake
-Symlinking /home/rirolab-vr/Desktop/republish_ws/devel/share/nlu_nav_demo/cmake/nlu_nav_demo-msg-extras.cmake
-Symlinking /home/rirolab-vr/Desktop/republish_ws/devel/share/nlu_nav_demo/cmake/nlu_nav_demo-msg-paths.cmake
-Symlinking /home/rirolab-vr/Desktop/republish_ws/devel/share/roseus/ros/nlu_nav_demo/manifest.l
