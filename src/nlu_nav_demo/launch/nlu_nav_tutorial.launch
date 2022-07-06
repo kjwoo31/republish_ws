@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <launch>
-
         <node name="fake_publisher"
               pkg="nlu_nav_demo"
               type="fake_publisher.py"
               output="screen" >
         </node>
-
 </launch>
   

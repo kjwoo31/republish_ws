@@ -1,0 +1,1 @@
+/home/rirolab-vr/Desktop/republish_ws/devel/.private/nlu_nav_demo/lib/pkgconfig/nlu_nav_demo.pc

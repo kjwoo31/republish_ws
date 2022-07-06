@@ -1,0 +1,8 @@
+prefix=/home/rirolab-vr/Desktop/republish_ws/devel/.private/nlu_nav_demo
+
+Name: nlu_nav_demo
+Description: Description of nlu_nav_demo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,1 @@
+/home/rirolab-vr/Desktop/republish_ws/devel/.private/nlu_nav_demo/lib/python2.7/dist-packages/nlu_nav_demo/__init__.py
