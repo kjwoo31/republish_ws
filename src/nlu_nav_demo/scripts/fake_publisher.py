@@ -63,10 +63,10 @@ class FakePublish:
                 self.trackimg_pub.publish(self.trackimg)
             except:
                 print("trackimg not publishing yet")
-            try:  
-                self.map_pub.publish(self.map_pub)
-            except:
-                print("map not publishing yet")                
+            #try:  
+            #    self.map_pub.publish(self.map_pub)
+            #except:
+            #    print("map not publishing yet")                
             try:  
                 self.text_pub.publish(self.text)
             except:
