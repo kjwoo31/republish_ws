@@ -24,7 +24,7 @@ class FakePublish:
       self.bbox_pub = rospy.Publisher("/detector/bbox_lines", Marker, queue_size=1)
       self.detectimg_pub = rospy.Publisher("/annotated_image", Image, queue_size=1)
       self.trackimg_pub = rospy.Publisher("/tracker/map_image", Image, queue_size=1)
-      self.map_pub = rospy.Publisher("/map", OccupancyGrid, queue_size=1)
+      self.map_pub = rospy.Publisher("/map", OccupancyGrid, queue_size=10)
       self.text_pub = rospy.Publisher("/tracker/text", OverlayText, queue_size=1)
 
       # Subscribers
@@ -63,10 +63,10 @@ class FakePublish:
                 self.trackimg_pub.publish(self.trackimg)
             except:
                 print("trackimg not publishing yet")
-            #try:  
-            #    self.map_pub.publish(self.map_pub)
-            #except:
-            #    print("map not publishing yet")                
+            try:  
+                self.map_pub.publish(self.map_pub)
+            except:
+                print("map not publishing yet")                
             try:  
                 self.text_pub.publish(self.text)
             except:
