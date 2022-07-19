@@ -110,15 +110,18 @@ class FakePublish:
             # except:
             #     print("path not publishing yet")           
             try:  
-                self.symbol_pub.publish(self.symbol)
+                if self.symbol!= None:
+                  self.symbol_pub.publish(self.symbol)
             except:
                 print("symbol not publishing yet")             
             try:  
-                self.speech_pub.publish(self.speech)
+                if self.speech!= None:
+                  self.speech_pub.publish(self.speech)
             except:
                 print("speech not publishing yet") 
             try:  
-                self.world_pub.publish(self.speech)
+                if self.world!= None:
+                  self.world_pub.publish(self.world)
             except:
                 print("world not publishing yet") 
 
