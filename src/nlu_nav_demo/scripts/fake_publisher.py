@@ -79,7 +79,6 @@ class FakePublish:
         self.speech = msg
 
     def world_callback(self, msg):
-        print(msg)
         self.world = msg
 
     def run(self):
