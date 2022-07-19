@@ -20,8 +20,9 @@ class FakePublish:
     #   self.text=None
     #   self.scan=None
     #   self.path=None
-      self.symbol=None
-      self.speech=None
+      self.symbol=''
+      self.speech=''
+      self.world=''
 
 
       # Publishers
@@ -34,6 +35,7 @@ class FakePublish:
     #  self.path_pub = rospy.Publisher("/move_base/TebLocalPlannerROS/global_plan", Path, queue_size=1)
       self.symbol_pub = rospy.Publisher("/haetae/symbol_grounding", String, queue_size=10)
       self.speech_pub = rospy.Publisher("/speech_recognition", String, queue_size=10)
+      self.world_pub = rospy.Publisher("/world_model", String, queue_size=10)
 
       # Subscribers
     #  rospy.Subscriber("/detector/bbox_lines", Marker, self.bbox_callback)
@@ -45,6 +47,7 @@ class FakePublish:
     #  rospy.Subscriber("/move_base/TebLocalPlannerROS/global_plan", Path, self.path_callback)
       rospy.Subscriber('/haetae/symbol_grounding', String, self.symbol_callback)
       rospy.Subscriber("/speech_recognition", String, self.speech_callback)
+      rospy.Subscriber("/world_model", String, self.world_callback)
 
     # def bbox_callback(self, msg):
     #     self.bbox = msg
@@ -72,6 +75,9 @@ class FakePublish:
 
     def speech_callback(self, msg):
         self.speech = msg
+
+    def world_callback(self, msg):
+        self.world = msg
 
     def run(self):
         while not rospy.is_shutdown():
@@ -111,6 +117,10 @@ class FakePublish:
                 self.speech_pub.publish(self.speech)
             except:
                 print("speech not publishing yet") 
+            try:  
+                self.world_pub.publish(self.speech)
+            except:
+                print("world not publishing yet") 
 
 
 if __name__ == '__main__':
