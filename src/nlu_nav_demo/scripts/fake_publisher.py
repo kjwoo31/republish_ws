@@ -71,6 +71,7 @@ class FakePublish:
     #     self.path = msg
 
     def symbol_callback(self, msg):
+        print(msg)
         self.symbol = msg
 
     def speech_callback(self, msg):
