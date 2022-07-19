@@ -75,9 +75,11 @@ class FakePublish:
         self.symbol = msg
 
     def speech_callback(self, msg):
+        print(msg)
         self.speech = msg
 
     def world_callback(self, msg):
+        print(msg)
         self.world = msg
 
     def run(self):
