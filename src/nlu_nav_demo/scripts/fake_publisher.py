@@ -20,9 +20,9 @@ class FakePublish:
     #   self.text=None
     #   self.scan=None
     #   self.path=None
-      self.symbol=''
-      self.speech=''
-      self.world=''
+      self.symbol=None
+      self.speech=None
+      self.world=None
 
 
       # Publishers
